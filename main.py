@@ -60,5 +60,5 @@ def inverse_tests():
 
 
 if __name__ == '__main__':
-    # forward_tests()
+    forward_tests()
     inverse_tests()
