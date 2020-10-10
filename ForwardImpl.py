@@ -6,7 +6,8 @@ from utils import *
 q1, q2, a2, d1, d3 = symbols("q1 q2 a2, d1 d3", real=True)
 
 # Forward Kinematics Homogeneous Matrix
-H = Rz(q1)*Tz(d1)*Rx(q2)*Ty(a2)*Ty(d3)*Tz(d3)
+#   Rz(q1)*Tz(d1)*Rx(q2)*Ty(a2)*Ty(d3)
+H = Rz(q1)*Tz(d1)*Rx(q2)*Ty(a2)*Ty(d3)
 H = trigsimp(H)
 
 set_printoptions(suppress=True)
